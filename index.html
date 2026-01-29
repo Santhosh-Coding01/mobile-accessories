@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📱Mobile Accessories Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📱Mobile Accessories Store</title>
 
 <style>
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body {
     line-height: 1.5;
 }
 
-/* Header */
+/* HEADER */
 header {
     background-color: #000f49;
     color: white;
@@ -49,26 +49,22 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: rgb(28, 78, 229);
-}
-
 /* HERO */
 .hero {
-    min-height: 90vh;
+    min-height: 85vh;
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("bg img.avif") center/cover no-repeat;
+        url("bg img.avif") center / cover no-repeat;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
     color: white;
 }
 
 .hero-content h1 {
-    font-size: clamp(28px, 5vw, 48px);
+    font-size: clamp(26px, 5vw, 48px);
     margin-bottom: 15px;
 }
 
@@ -86,14 +82,14 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* Products */
+/* PRODUCTS */
 .container {
     padding: 30px 20px;
 }
 
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 20px;
     max-width: 1200px;
     margin: auto;
@@ -133,7 +129,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* About & Contact */
+/* ABOUT & CONTACT */
 .info-section {
     padding: 40px 20px;
     background-color: #f4f4f4;
@@ -148,7 +144,7 @@ nav ul li a:hover {
     color: #000f49;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     background-color: #000f49;
     color: white;
@@ -156,43 +152,51 @@ footer {
     padding: 15px;
 }
 
-/* Tablet */
+/* TABLET */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
         gap: 10px;
     }
+
+    .hero {
+        min-height: 70vh;
+    }
 }
 
-/* 🔽 MOBILE OPTIMIZATION */
+/* 📱 MOBILE – FULL FLEXIBILITY */
 @media (max-width: 600px) {
 
+    .hero {
+        min-height: 60vh;
+        padding: 30px 15px;
+    }
+
     .products {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: 1fr;   /* Full-width cards */
+        gap: 20px;
     }
 
     .product {
-        padding: 10px;
-        max-width: 300px;
-        margin: auto;
+        width: 100%;
+        padding: 15px;
     }
 
     .product img {
-        height: 130px;
+        height: 160px;
     }
 
     .product h3 {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .product p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .product button {
-        padding: 6px 12px;
         font-size: 14px;
+        padding: 8px 16px;
     }
 }
 </style>
@@ -224,47 +228,12 @@ footer {
     <h2 style="text-align:center; margin-bottom:20px;">⚡ Our Products ⚡</h2>
 
     <div class="products">
-        <div class="product">
-            <img src="Tws.png">
-            <h3>Wireless Earphones</h3>
-            <p>₹1,299</p>
-            <button>Buy Now</button>
-        </div>
-
-        <div class="product">
-            <img src="fast charger.png">
-            <h3>Fast Charger</h3>
-            <p>₹799</p>
-            <button>Buy Now</button>
-        </div>
-
-        <div class="product">
-            <img src="power bank.jpg">
-            <h3>Power Bank</h3>
-            <p>₹1,499</p>
-            <button>Buy Now</button>
-        </div>
-
-        <div class="product">
-            <img src="smart watch.jpg">
-            <h3>Smart Watch</h3>
-            <p>₹1,799</p>
-            <button>Buy Now</button>
-        </div>
-
-        <div class="product">
-            <img src="data cable.png">
-            <h3>USB Cable</h3>
-            <p>₹299</p>
-            <button>Buy Now</button>
-        </div>
-
-        <div class="product">
-            <img src="speaker.jpg">
-            <h3>Bluetooth Speaker</h3>
-            <p>₹1,999</p>
-            <button>Buy Now</button>
-        </div>
+        <div class="product"><img src="Tws.png"><h3>Wireless Earphones</h3><p>₹1,299</p><button>Buy Now</button></div>
+        <div class="product"><img src="fast charger.png"><h3>Fast Charger</h3><p>₹799</p><button>Buy Now</button></div>
+        <div class="product"><img src="power bank.jpg"><h3>Power Bank</h3><p>₹1,499</p><button>Buy Now</button></div>
+        <div class="product"><img src="smart watch.jpg"><h3>Smart Watch</h3><p>₹1,799</p><button>Buy Now</button></div>
+        <div class="product"><img src="data cable.png"><h3>USB Cable</h3><p>₹299</p><button>Buy Now</button></div>
+        <div class="product"><img src="speaker.jpg"><h3>Bluetooth Speaker</h3><p>₹1,999</p><button>Buy Now</button></div>
     </div>
 </div>
 
