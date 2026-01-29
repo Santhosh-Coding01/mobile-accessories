@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📱Mobile Accessories Store</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header & Menu */
+        header {
+            background-color: #000f49;
+            color: white;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: rgb(28, 78, 229);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            height: 90vh;
+            background: 
+                linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("bg img.avif") center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content a {
+            padding: 12px 25px;
+            background-color: rgb(28, 78, 229);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero-content a:hover {
+            background-color: #000f49;
+        }
+
+        /* Product Section */
+        .container {
+            padding: 30px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product {
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #d8e9ff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            background-color: #a0c6fb;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover img {
+            transform: scale(1.05);
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: rgb(0, 159, 0);
+            font-weight: bold;
+        }
+
+        .product button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #222;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .product button:hover {
+            background-color: rgb(28, 78, 229);
+        }
+
+        /* About & Contact Sections */
+        .info-section {
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+            margin-top: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .info-section h2 {
+            margin-bottom: 15px;
+            color: #000f49;
+        }
+
+        .info-section p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000f49;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header / Menu -->
+<header>
+    <nav>
+        <h2>📱Mobile Accessories</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Mobile Accessories Store</h1>
+        <p>Your trusted shop for quality mobile gadgets</p>
+        <a href="#products">Explore Products</a>
+    </div>
+</section>
+
+    <!-- Products -->
+    <div class="container" id="products">
+        <h2 style="text-align:center; margin-bottom:20px;">⚡ Our Products ⚡</h2>
+
+        <div class="products">
+
+            <div class="product">
+                <img src="Tws.png" alt="Wireless Earphones">
+                <h3>Wireless Earphones</h3>
+                <p>₹1,299</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="fast charger.png" alt="Fast Charger">
+                <h3>Fast Charger</h3>
+                <p>₹799</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="power bank.jpg" alt="Power Bank">
+                <h3>Power Bank</h3>
+                <p>₹1,499</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="smart watch.jpg" alt="Smart Watch">
+                <h3>Smart Watch</h3>
+                <p>₹1,799</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="data cable.png" alt="USB Cable">
+                <h3>USB Cable</h3>
+                <p>₹299</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="speaker.jpg" alt="Bluetooth Speaker">
+                <h3>Bluetooth Speaker</h3>
+                <p>₹1,999</p>
+                <button>Buy Now</button>
+            </div>
+
+        </div>
+    </div>
+
+<!-- About -->
+<section class="info-section" id="about">
+    <h2>About Us</h2>
+    <p>
+        Mobile Accessories Store provides high-quality mobile accessories such as earphones,
+        chargers, power banks, smart watches, and speakers at affordable prices.
+    </p>
+</section>
+
+<!-- Contact -->
+<section class="info-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>
+        📧 support@santhoshmobile.com <br>
+        📞 +91 98765 43210 <br>
+        📍 Chennai, India
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; Mobile Accessories Store | Created by Santhosh</p>
+</footer>
+
+</body>
+</html>
